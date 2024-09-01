@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://brddyuxawwtuj"]
+
+[ext_resource type="Texture2D" uid="uid://djvkkpxsxjlp" path="res://ladybug.png" id="1_oi4oj"]
+[ext_resource type="Script" path="res://Scripts/InsectScript.cs" id="1_rv222"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_rv222")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(11.9605, 12.8437)
+rotation = -3.14159
+scale = Vector2(0.0668863, 0.0877084)
+texture = ExtResource("1_oi4oj")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]

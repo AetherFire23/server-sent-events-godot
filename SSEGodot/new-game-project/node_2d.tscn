@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl8iqjwoxc51s"]
+
+[ext_resource type="Script" path="res://Scripts/MyRenameTest.cs" id="2_0hwxe"]
+[ext_resource type="Script" path="res://Scripts/StuffCreation.cs" id="2_chf4w"]
+[ext_resource type="PackedScene" uid="uid://bp20uxlm15ael" path="res://SSEReceiver.tscn" id="2_qbiic"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MainManager" parent="." instance=ExtResource("2_qbiic")]
+script = null
+
+[node name="SSE" type="Node2D" parent="MainManager"]
+script = ExtResource("2_0hwxe")
+
+[node name="Creat" type="Node2D" parent="MainManager"]
+script = ExtResource("2_chf4w")
